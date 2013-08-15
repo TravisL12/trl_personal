@@ -4,6 +4,13 @@
   padding: 0px 20px 20px 20px;
   border: 1px dotted black;
 }
+
+#header{
+  font-size: 200px;
+  color: #ddd;
+  position: fixed;
+  top: 0;
+}
 th {
   text-align: left;
 }

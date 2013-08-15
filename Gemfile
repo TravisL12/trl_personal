@@ -1,7 +1,8 @@
-source :rubygems
+source 'https://rubygems.org'
 
 # PostgreSQL driver
 gem 'pg'
+gem 'haml'
 
 # Sinatra driver
 gem 'sinatra'
