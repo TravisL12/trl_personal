@@ -1,15 +1,10 @@
-var randomColor = function(){
-  var colors = Array("green", "blue", "yellow", "black"), idx;
-  idx = Math.floor(Math.random() * colors.length);
-  return colors[idx];
-}
-
 $(document).ready(function() {
 
-  $('#header span').mouseenter(function(){
-    $(this).css("color",randomColor);
+  $('#name_backing span').mouseenter(function(){
+
+    $(this).fadeTo('slow', 0.5);
   }).on('mouseleave',function(){
-    $(this).css('color', '#ddd')
+    $(this).fadeTo('slow', 1.0)
   })
 
 });

@@ -5,12 +5,15 @@
   border: 1px dotted black;
 }
 
-#header{
-  font-size: 200px;
-  color: #ddd;
+#name_backing{
+  font-size: 140px;
+  font-weight: bolder;
   position: fixed;
   top: 0;
+  line-height: 80%;
 }
-th {
-  text-align: left;
+
+#name_backing span{
+  letter-spacing: -40px;
+  color: #ccc;
 }
