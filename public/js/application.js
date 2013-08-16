@@ -1,29 +1,33 @@
+function letterColor(element, newColor){
+  var fadeTime = 200;
+  return $(element).animate({color: newColor}, fadeTime, 'linear')
+}
+
 var randomColor = function(){
   return "#" + Math.floor(Math.random()*16777215).toString(16);
+}
+
+function letterClick(element){
+  var letter      = element.innerText.toLowerCase();
+  var indexLetter = $( "#name_backing span" ).index(element) + 1;
+  var leadLetter  = indexLetter < 7 ? 'f' : indexLetter === 14 ? 'l2' : 'l';
+  return $(".letter_" + leadLetter + letter)
 }
 
 $(document).ready(function() {
 
   var origColor = $('#name_backing span').css('color');
-  var fadeTime = 200;
-
-  //Randomize Letter color
-  $('#name_backing span').mouseenter(function(){
-    $(this).animate({color: randomColor()}, fadeTime, 'linear').css('cursor','pointer');
-  }).on('mouseleave', function(){
-    $(this).animate({color: origColor}, fadeTime, 'linear')
-  });
+  $('#name_backing span').on({
+    mouseenter: function(){
+      letterColor(this, randomColor()).css('cursor','pointer')},
+    mouseleave: function(){
+      letterColor(this, origColor)}
+    });
 
   //Display the clicked letter
   $('#name_backing span').click(function(){
-    var letter = this.innerText.toLowerCase();
-    var count = $(this).prevAll('span').length + 1;
-    var leadLetter = (count < 7) ? 'f' : 'l';
-    var leadLetter = (count === 14) ? 'l2' : leadLetter;
-
     $("[class^='letter_']").css('display', 'none')
-    $(".letter_" + leadLetter + letter).fadeIn('slow')
-
+    letterClick(this).fadeIn('slow')
   })
 
 });

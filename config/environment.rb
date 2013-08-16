@@ -1,4 +1,4 @@
-# Set up gems listed in the Gemfile.
+p # Set ugems listed in the Gemfile.
 # See: http://gembundler.com/bundler_setup.html
 #      http://stackoverflow.com/questions/7243486/why-do-you-need-require-bundler-setup
 ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../../Gemfile', __FILE__)
@@ -9,6 +9,7 @@ require 'bundler/setup' if File.exists?(ENV['BUNDLE_GEMFILE'])
 require 'rubygems'
 require 'uri'
 require 'pathname'
+require 'twitter'
 
 require 'pg'
 require 'active_record'
@@ -31,3 +32,11 @@ Dir[APP_ROOT.join('app', 'helpers', '*.rb')].each { |file| require file }
 
 # Set up the database and models
 require APP_ROOT.join('config', 'database')
+
+Twitter.configure do |config|
+  twitter_data = YAML.load_file(APP_ROOT.join('config','twitter.yml'))
+  config.consumer_key        = twitter_data['consumer_key']
+  config.consumer_secret     = twitter_data['consumer_secret']
+  config.oauth_token         = twitter_data['oauth_token']
+  config.oauth_token_secret  = twitter_data['oauth_token_secret']
+end
