@@ -1,7 +1,4 @@
 get '/' do
-  erb :home
-end
-
-get '/about' do
-  haml :about
+  @tweets = Twitter.user_timeline('travisl12', :count => 10)
+  erb :index
 end

@@ -1,0 +1,11 @@
+.letter_ft, .letter_fr,
+.letter_fa, .letter_fv,
+.letter_fi, .letter_fs,
+.letter_ll, .letter_la,
+.letter_lw, .letter_lr,
+.letter_le, .letter_ln,
+.letter_lc, .letter_l2e {
+  font-size: 20px;
+  color: blue;
+  display: none;
+}
