@@ -7,5 +7,9 @@
 .letter_lc, .letter_l2e {
   font-size: 20px;
   color: blue;
-  display: none;
+}
+
+.twitter_posts{
+  font-size: bold;
+  color:red;
 }

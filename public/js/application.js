@@ -8,26 +8,28 @@ var randomColor = function(){
 }
 
 function letterClick(element){
-  var letter      = element.innerText.toLowerCase();
-  var indexLetter = $( "#name_backing span" ).index(element) + 1;
-  var leadLetter  = indexLetter < 7 ? 'f' : indexLetter === 14 ? 'l2' : 'l';
-  return $(".letter_" + leadLetter + letter)
+    var letter      = element.innerText.toLowerCase();
+    var indexLetter = $( ".header li" ).index(element) + 1;
+    var leadLetter  = indexLetter < 7 ? 'f' : indexLetter === 14 ? 'l2' : 'l';
+
+    return $.get("letters/" + leadLetter + letter, { letter: (leadLetter + letter) }, function(data){
+     $('.container').html(data);
+ })
 }
 
 $(document).ready(function() {
 
-  var origColor = $('#name_backing span').css('color');
-  $('#name_backing span').on({
+  var origColor = $('.header li').css('color');
+
+  $('.header li').on({
     mouseenter: function(){
-      letterColor(this, randomColor()).css('cursor','pointer')},
-    mouseleave: function(){
-      letterColor(this, origColor)}
-    });
+     letterColor(this, randomColor()).css('cursor','pointer')},
+     mouseleave: function(){
+       letterColor(this, origColor)}
+     });
 
   //Display the clicked letter
-  $('#name_backing span').click(function(){
-    $("[class^='letter_']").css('display', 'none')
-    letterClick(this).fadeIn('slow')
-  })
-
-});
+  $('.header li').click(function(){
+    letterClick(this);
+   });
+  });

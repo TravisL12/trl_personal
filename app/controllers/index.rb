@@ -1,4 +1,9 @@
 get '/' do
-  @tweets = Twitter.user_timeline('travisl12', :count => 10)
   erb :index
+end
+
+get '/letters/:letter' do
+  @letter_data = send("#{params[:letter]}_help")
+
+  haml :"letters/#{params[:letter]}"
 end

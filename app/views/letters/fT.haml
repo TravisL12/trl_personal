@@ -1,2 +1,6 @@
 .letter_ft
-  Letter "T"!!!
+  T is for Twitter!
+.twitter_posts
+  %ul
+  - @letter_data.each do |tweet|
+    %li= tweet.text

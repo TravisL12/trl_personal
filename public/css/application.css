@@ -1,20 +1,32 @@
 .container {
-  margin: 250px auto;
+  margin: 280px auto;
   width: 100%;
   padding: 0px 20px 20px 20px;
-  border-top: 1px solid;
 }
 
 .header{
   font-size: 140px;
   font-weight: bolder;
   position: fixed;
+  background: white;
   top: 0;
-  line-height: 80%;
+  width: 100%;
+  border-bottom: 1px solid;
 }
 
-#name_backing span{
+.header li{
   font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-  letter-spacing: -30px;
   color: #ccc;
+  list-style: none;
+  top: 0;
 }
+
+.firstname ul, .lastname ul{
+  margin: 0;
+}
+
+.firstname li, .lastname li{
+  display: table-cell;
+  line-height: 130px;
+}
+
