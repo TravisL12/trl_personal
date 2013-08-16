@@ -8,12 +8,12 @@ var randomColor = function(){
 }
 
 function letterClick(element){
-    var letter      = element.innerText.toLowerCase();
-    var indexLetter = $( ".header li" ).index(element) + 1;
-    var leadLetter  = indexLetter < 7 ? 'f' : indexLetter === 14 ? 'l2' : 'l';
+  var letter      = element.innerText.toLowerCase();
+  var indexLetter = $( ".header li" ).index(element) + 1;
+  var leadLetter  = indexLetter < 7 ? 'f' : indexLetter === 14 ? 'l2' : 'l';
 
-    return $.get("letters/" + leadLetter + letter, { letter: (leadLetter + letter) }, function(data){
-     $('.container').html(data);
+  return $.get("letters/" + leadLetter + letter, { letter: (leadLetter + letter) }, function(data){
+   $('.container').html(data);
  })
 }
 
@@ -24,12 +24,13 @@ $(document).ready(function() {
   $('.header li').on({
     mouseenter: function(){
      letterColor(this, randomColor()).css('cursor','pointer')},
-     mouseleave: function(){
-       letterColor(this, origColor)}
-     });
+    mouseleave: function(){
+     letterColor(this, origColor)}
+  });
 
   //Display the clicked letter
   $('.header li').click(function(){
     letterClick(this);
-   });
   });
+
+});

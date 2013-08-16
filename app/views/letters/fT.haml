@@ -1,6 +1,18 @@
 .letter_ft
-  T is for Twitter!
-.twitter_posts
-  %ul
-  - @letter_data.each do |tweet|
-    %li= tweet.text
+  %p T is for Twitter!
+
+.twitter_table
+  %table
+    %tbody
+      - @letter_data.each_slice(3) do |tweet|
+        %tr
+          - tweet.each do |cnt|
+            %td
+              .twitter_posts
+                %p.tweet_text= cnt.text
+                %p.tweet_loc
+                  From:
+                  = cnt.user.location
+                %p.tweet_time
+                  Sent:
+                  = cnt.created_at.strftime("%b, %d %Y at %l:%M %P")

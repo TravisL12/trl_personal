@@ -1,6 +1,10 @@
+body{
+  width: 1000px;
+}
+
 .container {
   margin: 280px auto;
-  width: 100%;
+  width: 800px;
   padding: 0px 20px 20px 20px;
 }
 
@@ -30,3 +34,34 @@
   line-height: 130px;
 }
 
+.twitter_table{
+
+}
+
+.twitter_posts{
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 245px;
+  height: 150px;
+  margin: 15px;
+  padding: 10px;
+  list-style: none;
+}
+
+.tweet_text{
+  vertical-align: middle;
+  color: blue;
+  font-size: 16px;
+}
+
+.tweet_loc{
+  font-size: 12px;
+  font-style: italic;
+  margin: 2px 0 0 0;
+}
+
+.tweet_time{
+  font-size: 12px;
+  font-style: italic;
+  margin: 2px 0 0 0;
+}
