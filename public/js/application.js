@@ -7,12 +7,14 @@ $(document).ready(function() {
   var origColor = $('#name_backing span').css('color');
   var fadeTime = 200;
 
+  //Randomize Letter color
   $('#name_backing span').mouseenter(function(){
     $(this).animate({color: randomColor()}, fadeTime, 'linear').css('cursor','pointer');
   }).on('mouseleave', function(){
     $(this).animate({color: origColor}, fadeTime, 'linear')
   });
 
+  //Display the clicked letter
   $('#name_backing span').click(function(){
     var letter = this.innerText.toLowerCase();
     var count = $(this).prevAll('span').length + 1;
