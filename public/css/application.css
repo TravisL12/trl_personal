@@ -6,10 +6,50 @@
   padding: 0px 20px 20px 20px;
 }
 
-.home{
+.home_link{
   position: fixed;
   top: 245px;
   right: 15%;
+}
+
+.main{
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  width: 645px;
+  min-height: 500px;
+  padding: 20px 10px;
+}
+
+.side_bar{
+  position: relative;
+  top: 0;
+  right: 50px;
+  float: right;
+  padding: 20px 0;
+  border-radius: 10px;
+  min-height: 400px;
+  border: 1px solid black;
+  width: 220px;
+  text-align: center;
+  background:url('/images/superman_fly.png') no-repeat 0 0;
+}
+
+/* possibly too much going on with the hover
+.side_bar:hover{
+  background:url('/images/superman_punch.png') no-repeat 0 0;
+}
+*/
+
+.side_bar p{
+  font-family: "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace;
+  font-size: 30px;
+  margin: 0 0 15px 0;
+}
+
+.side_bar a{
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
 }
 
 .header{

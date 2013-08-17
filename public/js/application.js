@@ -31,4 +31,12 @@ $(document).ready(function() {
   $('.header li').click(function(){
     letterClick(this);
   });
+
+  //Sidebar icon wiggle
+  $('.media_icon').hover(function(){
+    $(this).ClassyWiggle('start', { limit: 25 });
+  },function(){
+    $(this).ClassyWiggle('stop');
+  });
+
 });
