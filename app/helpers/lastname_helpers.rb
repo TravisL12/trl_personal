@@ -1,32 +1,32 @@
 def ll_help
-  "ll helper works!"
+  "L Page Needs some Work!!"
 end
 
 def la_help
-  "la helper works!"
+  "A Page Needs some Work!!"
 end
 
 def lw_help
-  "lw helper works!"
+  "W Page Needs some Work!!"
 end
 
 def lr_help
-  "lr helper works!"
+  "R Page Needs some Work!!"
 end
 
 def le_help
-  "le helper works!"
+  "E Page Needs some Work!!"
 end
 
 def ln_help
-  "ln helper works!"
+  "N Page Needs some Work!!"
 end
 
 def lc_help
-  "lc helper works!"
+  "C Page Needs some Work!!"
 end
 
 def l2e_help
-  "l2 helper works!"
+  "2 Page Needs some Work!!"
 end
 

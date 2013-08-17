@@ -3,21 +3,21 @@ def ft_help
 end
 
 def fr_help
-  "fr helper works!"
+  "R Page Needs some Work!!"
 end
 
 def fa_help
-  "fa helper works!"
+  "A Page Needs some Work!!"
 end
 
 def fv_help
-  "fv helper works!"
+  "V Page Needs some Work!!"
 end
 
 def fi_help
-  "fi helper works!"
+  "I Page Needs some Work!!"
 end
 
 def fs_help
-  "fs helper works!"
+  "S Page Needs some Work!!"
 end
