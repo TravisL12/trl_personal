@@ -6,7 +6,7 @@
 .letter_le, .letter_ln,
 .letter_lc, .letter_l2e {
   font-size: 20px;
-  width: 900px;
+  margin: 0 auto;
 }
 
 .letter_ft{
