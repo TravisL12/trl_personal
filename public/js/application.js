@@ -12,6 +12,7 @@ function letterClick(element){
   var indexLetter = $( ".header li" ).index(element) + 1;
   var leadLetter  = indexLetter < 7 ? 'f' : indexLetter === 14 ? 'l2' : 'l';
 
+
   return $.get("letters/" + leadLetter + letter, { letter: (leadLetter + letter) }, function(data){
    $('.container').html(data);
  })
@@ -19,14 +20,14 @@ function letterClick(element){
 
 $(document).ready(function() {
 
+  //Change letter color
   var origColor = $('.header li').css('color');
-
   $('.header li').on({
     mouseenter: function(){
      letterColor(this, randomColor()).css('cursor','pointer')},
-    mouseleave: function(){
-     letterColor(this, origColor)}
-  });
+     mouseleave: function(){
+       letterColor(this, origColor)}
+     });
 
   //Display the clicked letter
   $('.header li').click(function(){

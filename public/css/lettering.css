@@ -6,5 +6,11 @@
 .letter_le, .letter_ln,
 .letter_lc, .letter_l2e {
   font-size: 20px;
-  color: blue;
+  width: 900px;
+}
+
+.letter_ft{
+  padding: 20px;
+  background:url('/images/twitter.jpg');
+  background-position: center;
 }
