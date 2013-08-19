@@ -34,9 +34,8 @@ Dir[APP_ROOT.join('app', 'helpers', '*.rb')].each { |file| require file }
 require APP_ROOT.join('config', 'database')
 
 Twitter.configure do |config|
-  twitter_data = YAML.load_file(APP_ROOT.join('config','twitter.yml'))
-  config.consumer_key        = twitter_data['consumer_key']
-  config.consumer_secret     = twitter_data['consumer_secret']
-  config.oauth_token         = twitter_data['oauth_token']
-  config.oauth_token_secret  = twitter_data['oauth_token_secret']
+  config.consumer_key        = ENV['consumer_key']
+  config.consumer_secret     = ENV['consumer_secret']
+  config.oauth_token         = ENV['oauth_token']
+  config.oauth_token_secret  = ENV['oauth_token_secret']
 end
