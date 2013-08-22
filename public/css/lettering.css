@@ -14,3 +14,26 @@
   background:url('/images/twitter.jpg');
   background-position: center;
 }
+
+.twitter_posts{
+  background: rgb(255, 255, 170);
+  background: rgba(255, 255, 170, 0.75);
+  border-radius: 20px;
+  width: 245px;
+  height: 150px;
+  margin: 15px;
+  padding: 10px;
+  list-style: none;
+}
+
+.tweet_text{
+  font-weight: bold;
+  vertical-align: middle;
+  font-size: 16px;
+}
+
+.tweet_time, .tweet_loc{
+  font-size: 12px;
+  font-style: italic;
+  margin: 2px 0 0 0;
+}

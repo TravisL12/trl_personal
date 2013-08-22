@@ -7,6 +7,7 @@ gem 'haml'
 # Sinatra driver
 gem 'sinatra'
 gem 'sinatra-contrib'
+gem 'sass'
 
 # Use Thin for our web server
 gem 'thin'
