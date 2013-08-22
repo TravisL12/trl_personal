@@ -11,8 +11,65 @@
   color: black;
 }
 
-.work_links{
+.header{
+  position: absolute;
+  background:url('/images/header_bluepaper.png') repeat-x;
+  top: 0;
+  height: 272px;
+  width: 100%;
+}
+
+.fullname li{
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 140px;
+  font-weight: bolder;
+  color: #fff;
+  list-style: none;
+  top: 0;
+  display: table-cell;
+  line-height: 100px;
+}
+
+.fullname ul{
+  padding: 0;
+}
+
+.innerhead{
+  width: 940px;
+  padding-left: 10px;
+  margin: 0 auto;
+}
+
+.innerhead ul{
+  padding: 0;
+}
+
+.menu_bar {
+  position: relative;
+  top: 28px;
+  right: 283px;
+}
+
+.menu_bar ul{
+  text-align: right;
+}
+
+.menu_bar ul li{
+  min-width: 85px;
+  margin: 0 6px;
+  padding: 10px 25px;
+  background:url('/images/header_bluepaper.png');
+  background-attachment: fixed;
+  background-position: top left;
+  list-style: none;
   display: inline;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.menu_bar ul li a{
+  text-decoration: none;
+  color: white;
 }
 
 .main{
@@ -32,10 +89,11 @@
   padding: 20px 0;
   border-radius: 10px;
   min-height: 400px;
-  width: 220px;
+  width: 180px;
   text-align: center;
+  border: 5px solid #88E1FF;
   /*background: #88E1FF*/
-  background:url('/images/sidebar_bluepaper.png');
+  /*background:url('/images/sidebar_bluepaper.png');*/
 }
 
 .side_bar p{
@@ -47,6 +105,10 @@
   font-size: 16px;
   text-decoration: none;
   color: black;
+}
+
+.work_example img{
+  float: left;
 }
 
 .stack_icons{
@@ -63,65 +125,6 @@
   font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
   background: black;
   margin: 0 auto;
-}
-
-.header{
-  position: absolute;
-  background-attachment: fixed;
-  background-position: top left;
-  background:url('/images/header_bluepaper.png') no-repeat;
-  top: 0;
-  height: 272px;
-  width: 100%;
-}
-
-.fullname li{
-  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-  font-size: 140px;
-  font-weight: bolder;
-  color: #fff;
-  list-style: none;
-  top: 0;
-  display: table-cell;
-  line-height: 100px;
-}
-
-.innerhead{
-  width: 940px;
-  padding-left: 10px;
-  margin: 0 auto;
-}
-
-.fullname ul{
-  padding: 0;
-}
-
-.menu_bar {
-  position: relative;
-  top: 28px;
-  left: 326px;
-}
-
-.innerhead ul{
-  padding: 0;
-}
-
-.menu_bar ul li{
-  min-width: 85px;
-  margin: 0 6px;
-  padding: 10px 25px;
-  background:url('/images/header_bluepaper.png');
-  background-attachment: fixed;
-  background-position: top left;
-  list-style: none;
-  display: inline;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-.menu_bar ul li a{
-  text-decoration: none;
-  color: white;
 }
 
 .footer{
