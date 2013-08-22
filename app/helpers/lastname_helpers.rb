@@ -1,31 +1,33 @@
 def ll_help
-  "L Page Needs some Work!!"
+  "L Page is coming soon!! I believe 'T' is the only page that works!!"
 end
 
 def la_help
-  "A Page Needs some Work!!"
+  "A Page is coming soon!! I believe 'T' is the only page that works!!"
 end
 
 def lw_help
-  "W Page Needs some Work!!"
+  "W Page is coming soon!! I believe 'T' is the only page that works!!"
 end
 
 def lr_help
-  "R Page Needs some Work!!"
+  "R Page is coming soon!! I believe 'T' is the only page that works!!"
 end
 
 def le_help
-  "E Page Needs some Work!!"
+  "E Page is coming soon!! I believe 'T' is the only page that works!!"
 end
 
 def ln_help
-  "N Page Needs some Work!!"
+  "N Page is coming soon!! I believe 'T' is the only page that works!!"
 end
 
 def lc_help
-  "C Page Needs some Work!!"
+  "C Page is coming soon!! I believe 'T' is the only page that works!!"
 end
 
 def l2e_help
-  "2 Page Needs some Work!!"
+  "2 Page is coming soon!! I believe 'T' is the only page that works!!"
 end
+
+

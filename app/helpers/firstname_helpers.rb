@@ -3,21 +3,21 @@ def ft_help
 end
 
 def fr_help
-  "R Page Needs some Work!!"
+  "R Page is coming soon!! I believe 'T' is the only page that works!"
 end
 
 def fa_help
-  "A Page Needs some Work!!"
+  "A Page is coming soon!! I believe 'T' is the only page that works!"
 end
 
 def fv_help
-  "V Page Needs some Work!!"
+  "V Page is coming soon!! I believe 'T' is the only page that works!"
 end
 
 def fi_help
-  "I Page Needs some Work!!"
+  "I Page is coming soon!! I believe 'T' is the only page that works!"
 end
 
 def fs_help
-  "S Page Needs some Work!!"
+  "S Page is coming soon!! I believe 'T' is the only page that works!"
 end

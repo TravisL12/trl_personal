@@ -1,9 +1,18 @@
 .container {
-  margin-top: 300px;
+  margin-top: 320px;
   margin-left: auto;
   margin-right: auto;
   width: 940px;
   padding: 0px 20px 20px 20px;
+}
+
+.container a{
+  text-decoration: none;
+  color: black;
+}
+
+.work_links{
+  display: inline;
 }
 
 .main{
@@ -25,7 +34,8 @@
   min-height: 400px;
   width: 220px;
   text-align: center;
-  background: #88E1FF;
+  /*background: #88E1FF*/
+  background:url('/images/sidebar_bluepaper.png');
 }
 
 .side_bar p{
@@ -57,7 +67,9 @@
 
 .header{
   position: absolute;
-  background: #6DB4CC;
+  background-attachment: fixed;
+  background-position: top left;
+  background:url('/images/header_bluepaper.png') no-repeat;
   top: 0;
   height: 272px;
   width: 100%;
@@ -86,8 +98,8 @@
 
 .menu_bar {
   position: relative;
-  top: 20px;
-  left: 457px;
+  top: 28px;
+  left: 326px;
 }
 
 .innerhead ul{
@@ -95,17 +107,29 @@
 }
 
 .menu_bar ul li{
-  min-width: 65px;
+  min-width: 85px;
   margin: 0 6px;
-  padding: 2px 3px 0 3px;
-  background: #6DB4CC;
+  padding: 10px 25px;
+  background:url('/images/header_bluepaper.png');
+  background-attachment: fixed;
+  background-position: top left;
   list-style: none;
   display: inline;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .menu_bar ul li a{
   text-decoration: none;
   color: white;
+}
+
+.footer{
+  width: 645px;
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+  margin-top: 60px;
+  border-top: 2px solid black;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;
 }
