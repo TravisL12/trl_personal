@@ -73,8 +73,8 @@
 }
 
 .main{
-  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
   width: 645px;
   min-height: 500px;
   padding: 0 10px 10px 10px;
@@ -93,7 +93,7 @@
   text-align: center;
   border: 5px solid #88E1FF;
   /*background: #88E1FF*/
-  /*background:url('/images/sidebar_bluepaper.png');*/
+  background:url('/images/sidebar_bluepaper.png');
 }
 
 .side_bar p{
@@ -107,8 +107,17 @@
   color: black;
 }
 
+.work_example{
+  margin-bottom: 25px;
+}
+
 .work_example img{
   float: left;
+  margin-right: 15px;
+}
+
+.work_example #example{
+  height: 200px;
 }
 
 .stack_icons{
