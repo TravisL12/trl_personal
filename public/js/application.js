@@ -10,14 +10,14 @@ var randomColor = function(){
   return "#" + Math.floor(Math.random()*16777215).toString(16);
 };
 
-function letterClick(element){
-  var letter      = element.innerText.toLowerCase();
-  var indexLetter = $( ".header .fullname li" ).index(element) + 1;
-  var leadLetter  = indexLetter < 7 ? 'f' : indexLetter === 14 ? 'l2' : 'l';
-  return $.get("letters/" + leadLetter + letter, { letter: (leadLetter + letter) }, function(data){
-   $('.container').html(data);
- });
-};
+// function letterClick(element){
+//   var letter      = element.innerText.toLowerCase();
+//   var indexLetter = $( ".header .fullname li" ).index(element) + 1;
+//   var leadLetter  = indexLetter < 7 ? 'f' : indexLetter === 14 ? 'l2' : 'l';
+//   $.get("letters/" + leadLetter + letter, { letter: (leadLetter + letter) }, function(data){
+//    $('.container').html(data);
+//  });
+// }
 
 $(document).ready(function() {
 
@@ -25,15 +25,15 @@ $(document).ready(function() {
   var origColor = $('.header .fullname li').css('color');
   $('.header .fullname li').on({
     mouseenter: function(){
-     letterColor(this, randomColor()).css('cursor','pointer')},
+     letterColor(this, randomColor())},
      mouseleave: function(){
        letterColor(this, origColor)}
      });
 
   //Display the clicked letter
-  $('.header .fullname li').click(function(){
-    letterClick(this);
-  });
+  // $('.header .fullname li').click(function(){
+  //   letterClick(this);
+  //  })
 
   //Sidebar icon wiggle
   $('.media_icon').hover(function(){
